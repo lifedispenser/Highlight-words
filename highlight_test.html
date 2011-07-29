@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+	<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery.highlight-words.js"></script>
+
+    <script type="text/javascript">
+		$().ready(function() {
+			$().hlw();
+		});
+    </script>
+	<style>
+		.invis {color:rgba(0,0,0,.1);}
+	</style>
+  </head>
+  <body>
+	<p words="{'invis': ['capital', 'multi words', 'one', 'hy-phen-s', 'semi', 'period', 'comma', 'colon', 'inspan', 'withclass']}">
+		1. Capital <br/>
+		2. one <br/>
+		3. multi words <br/>
+		3.a multi not words <br/>
+		4. hy-phen-s <br/>
+		5. semi; <br/>
+		6. period. <br/>
+		7. comma, <br/>
+		8. colon: <br/>
+		9. <span>inspan</span> <br/>
+		9.a <span class='hi'> inspan</span> <br/>
+		9.b <span class='one two'> inspan </span> <br/>
+		9.c <span> inspan </span><span>inspan</span><br/>
+	</p>
+  </body>
+</html>
